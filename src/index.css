@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Porter+Sans+Block:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poller+One:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Habibi:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abel:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aladin:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre+ExtraBold:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  @apply leading-[normal] m-0;
+}
+*,
+::before,
+::after {
+  border-width: 0;
+}
+
+/* styles.css */
+/* Add styles for small devices */
+@media (max-width: 500px) {
+  .desktop-component {
+    display: none;
+  }
+}
+
+/* Add styles for desktop devices */
+@media (min-width: 500px) {
+  .small-device-component {
+    display: none;
+  }
+}

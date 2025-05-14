@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DigitalDino</title>
+
+</head>
+
+<body style="background-color: white; transition: cubic-bezier(0.075, 0.82, 0.165, 1);">
+  <div id="root" style="background-color:wihte"></div>
+  <script type="module" src="/src/main.jsx"></script>
+  <script>
+    let body = document.querySelector('body');
+    let main = document.querySelector('#root');
+
+    const setTheme = () => {
+      let theme = localStorage.getItem('mode');
+    
+      if (theme === 'dark') {
+        main.style.background = 'black';
+        body.style.background = 'black';
+      } else if (theme === 'light') {
+        main.style.background = 'white';
+        body.style.background = 'white';
+      }
+    };
+
+    // Listen for changes in local storage
+    setInterval(() => {
+      setTheme()
+    }, 100);
+
+
+  </script>
+
+
+</body>
+
+</html>

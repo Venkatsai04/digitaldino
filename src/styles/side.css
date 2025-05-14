@@ -1,0 +1,13 @@
+#container[data-animated] {
+  overflow: hidden;
+}
+
+#container[data-animated] div {
+  animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+  to {
+    transform: translateX(calc(-100% - 5px));
+  }
+}

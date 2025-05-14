@@ -1,0 +1,5 @@
+/* Add this to your CSS or styling file */
+.light-mode, .dark-mode {
+    transition: background-color 0.3s ease; /* You can adjust the duration and easing function as needed */
+}
+
